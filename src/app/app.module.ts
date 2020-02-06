@@ -3,11 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
-import { AppComponent } from './app.component';
 
+
+import { AppComponent } from './app.component';
+//import here
+import {CutomePipe} from  './custome.pipe';
+
+//To enable putt here
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CutomePipe
   ],
   imports: [
     BrowserModule,
