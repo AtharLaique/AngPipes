@@ -10,8 +10,9 @@ export class CutomePipe implements PipeTransform {
  
     //implentation 
     // this function must take a vlue as input and must return something
-      transform(value:any)
+      transform(value:any , parameter:any)
       {
-          return value.substr(0,10)
+          // here we are going to suppose the parameter is limit, so we can use as limit
+          return value.substr(0,parameter)
       }
 }
