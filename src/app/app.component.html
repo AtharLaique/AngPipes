@@ -13,7 +13,8 @@
           <!--To use pipe | pipe. Let's se how -->
           <!--Parametrizing Pipe | pipe: 'parameterName' Let's se how -->
            <!--Multiple Pipe | pipe | pipe . Remember Order of pipe is matter .Let's se how -->
-          <strong>{{ server.name }}</strong> | {{ server.instanceType | uppercase}} | {{ server.started | date:'fullDate' | uppercase}}
+            <!-- here we are using our own pipe with the name of custome -->
+          <strong>{{ server.name | custome }}</strong> | {{ server.instanceType | uppercase}} | {{ server.started | date:'fullDate' | uppercase}}
         </li>
       </ul>
     </div>
