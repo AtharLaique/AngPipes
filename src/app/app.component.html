@@ -11,7 +11,8 @@
             {{ server.status }}
           </span>
           <!--To use pipe | pipe. Let's se how -->
-          <strong>{{ server.name }}</strong> | {{ server.instanceType | uppercase}} | {{ server.started | date}}
+          <!--Parametrizing Pipe | pipe: 'parameterName' Let's se how -->
+          <strong>{{ server.name }}</strong> | {{ server.instanceType | uppercase}} | {{ server.started | date:'fullDate'}}
         </li>
       </ul>
     </div>
