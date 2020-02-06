@@ -14,7 +14,8 @@
           <!--Parametrizing Pipe | pipe: 'parameterName' Let's se how -->
            <!--Multiple Pipe | pipe | pipe . Remember Order of pipe is matter .Let's se how -->
             <!-- here we are using our own pipe with the name of custome -->
-          <strong>{{ server.name | custome }}</strong> | {{ server.instanceType | uppercase}} | {{ server.started | date:'fullDate' | uppercase}}
+               <!-- We are passing parameters to our custome pipe-->
+          <strong>{{ server.name | custome:1 }}</strong> | {{ server.instanceType | uppercase}} | {{ server.started | date:'fullDate' | uppercase}}
         </li>
       </ul>
     </div>
